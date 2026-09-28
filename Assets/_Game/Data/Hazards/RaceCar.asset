@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e1c7bb02d6af742b452cee14a28862, type: 3}
+  m_Name: RaceCar
+  m_EditorClassIdentifier: Assembly-CSharp::GodTower.Data.HazardProfile
+  giftName: Race Car
+  maxPerWave: 1
+  warningDuration: 1.5
+  sprites:
+  - {fileID: 21300000, guid: e964dcf7e7c8e43c5864020c5100e966, type: 3}
+  - {fileID: 21300000, guid: 1f933e3eb1cb9427c90663457a8721cc, type: 3}
+  - {fileID: 21300000, guid: 8da3d3b1471a747bf88d06a643cf1e15, type: 3}
+  - {fileID: 21300000, guid: c3175ef48e96549649bb4f03fb4d1edc, type: 3}
+  - {fileID: 21300000, guid: 80fbe2bc9e63140e7942abbfa08e4cf8, type: 3}
+  scale: 0.34
+  spinSpeed: 0
+  fromBelow: 0
+  speedMultiplier: 1.7
+  hitRadius: 0.6
+  knockbackMultiplier: 1.3
+  impactTrauma: 1
+  impactZoomKick: -1.6
+  zoomOut: 3.5
+  trailEffect: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}
+  trailOffset: {x: 0, y: 4.2}
+  trailScale: 2.6470587
+  impactEffect: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
+  impactEffectScale: 1.6
+  impactText: {fileID: 5339739117810204693, guid: 26e1cb216e3635e4a820f58a1118d6b9, type: 3}
+  launchSfx: 5
+  impactSfx: 10

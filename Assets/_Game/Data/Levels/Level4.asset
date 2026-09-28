@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3ee338a93ae844f94ea3b7f5eb533d, type: 3}
+  m_Name: Level4
+  m_EditorClassIdentifier: Assembly-CSharp::GodTower.Data.LevelConfig
+  displayName: Sunset Spire
+  goalMeters: 3500
+  skyTint: {r: 1, g: 0.72, b: 0.56, a: 1}
+  towerTint: {r: 0.86, g: 0.76, b: 0.62, a: 1}
+  cloudTint: {r: 1, g: 0.84, b: 0.74, a: 1}
+  cloudDensity: 0.6
+  lightning: 0
+  ambientEffect: {fileID: 4364354964670000192, guid: 3801a320e9ae1bf44a14efa194c86c3f, type: 3}
+  hazardInterval: {x: 3.4, y: 2.6}
+  maxHazardsPerWave: 2
+  hazardFallSpeed: 8.5
+  knockbackMeters: 150
+  hazards:
+  - profile: {fileID: 11400000, guid: 4c165d6e7858ff342bb0834eed350904, type: 2}
+    weight: 0.4
+  - profile: {fileID: 11400000, guid: a589e79f2772b25418e632da835c8aa1, type: 2}
+    weight: 0.3
+  - profile: {fileID: 11400000, guid: 76ebeac2db9d3bd49acfbfcf062ef2aa, type: 2}
+    weight: 0.3
+  helperChance: 0.32
+  ambushes:
+  - atProgress: 0.4
+    monsters:
+    - {fileID: 11400000, guid: f23b73db2770ff54881a72a47c93a4ce, type: 2}
+    - {fileID: 11400000, guid: f23b73db2770ff54881a72a47c93a4ce, type: 2}
+    dragMeters: 250
+  - atProgress: 0.75
+    monsters:
+    - {fileID: 11400000, guid: 84717e4aa214d6d4192a357d751171b7, type: 2}
+    dragMeters: 300

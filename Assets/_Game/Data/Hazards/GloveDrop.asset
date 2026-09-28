@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55e1c7bb02d6af742b452cee14a28862, type: 3}
+  m_Name: GloveDrop
+  m_EditorClassIdentifier: Assembly-CSharp::GodTower.Data.HazardProfile
+  giftName: Boxing
+  maxPerWave: 2
+  warningDuration: 0.85
+  sprites:
+  - {fileID: 5690298848919886273, guid: 4a3be26a17262a74ebe839b45ea8feaf, type: 3}
+  - {fileID: 1121590698591480101, guid: 4a3be26a17262a74ebe839b45ea8feaf, type: 3}
+  - {fileID: 7829146763460268052, guid: 4a3be26a17262a74ebe839b45ea8feaf, type: 3}
+  - {fileID: 8792053889051976249, guid: 4a3be26a17262a74ebe839b45ea8feaf, type: 3}
+  scale: 1
+  spinSpeed: 270
+  fromBelow: 0
+  speedMultiplier: 1
+  hitRadius: 0.55
+  knockbackMultiplier: 1
+  impactTrauma: 0.6
+  impactZoomKick: -0.8
+  zoomOut: 0
+  trailEffect: {fileID: 0}
+  trailOffset: {x: 0, y: 0}
+  trailScale: 1
+  impactEffect: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}
+  impactEffectScale: 1.2
+  impactText: {fileID: 119183615461286708, guid: 141e1779869c79845bd243610f187f47, type: 3}
+  launchSfx: 2
+  impactSfx: 3

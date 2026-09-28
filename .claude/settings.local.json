@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -)",
+      "Bash(grep -n \"// ---- \" ArtPipeline.cs)",
+      "Bash(rm -v tower_*.png tower_*.png.meta)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "ai-game-developer"
+  ]
+}

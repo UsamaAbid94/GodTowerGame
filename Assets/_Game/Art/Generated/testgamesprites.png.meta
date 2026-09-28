@@ -1,0 +1,1729 @@
+fileFormatVersion: 2
+guid: 4a3be26a17262a74ebe839b45ea8feaf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5681355849191230068
+    second: testgamesprites_0
+  - first:
+      213: -5578441651040387711
+    second: testgamesprites_1
+  - first:
+      213: 504414303790867225
+    second: testgamesprites_2
+  - first:
+      213: -2074122637466194397
+    second: testgamesprites_3
+  - first:
+      213: 4091219092162297068
+    second: testgamesprites_4
+  - first:
+      213: 5822769851467787213
+    second: testgamesprites_5
+  - first:
+      213: 7436201479418646017
+    second: testgamesprites_6
+  - first:
+      213: -8747120626498562000
+    second: testgamesprites_7
+  - first:
+      213: 5448989516241095697
+    second: testgamesprites_8
+  - first:
+      213: -448421145747337131
+    second: testgamesprites_9
+  - first:
+      213: 7960691892564851265
+    second: testgamesprites_10
+  - first:
+      213: -5332570307363793976
+    second: testgamesprites_11
+  - first:
+      213: -2112756823884430689
+    second: testgamesprites_12
+  - first:
+      213: -2731814592318244646
+    second: testgamesprites_13
+  - first:
+      213: 5393912441614825548
+    second: testgamesprites_14
+  - first:
+      213: -2129600005678988568
+    second: testgamesprites_15
+  - first:
+      213: 6588208592774124018
+    second: testgamesprites_16
+  - first:
+      213: 4377961950247423697
+    second: testgamesprites_17
+  - first:
+      213: 303398907430235894
+    second: testgamesprites_18
+  - first:
+      213: -6419012908226560971
+    second: testgamesprites_19
+  - first:
+      213: 859864068847146253
+    second: testgamesprites_20
+  - first:
+      213: 6940479901266815879
+    second: testgamesprites_21
+  - first:
+      213: -2752919003912449305
+    second: testgamesprites_22
+  - first:
+      213: 5746382664794544193
+    second: testgamesprites_23
+  - first:
+      213: -1691451235995777577
+    second: testgamesprites_24
+  - first:
+      213: 4862720450450500103
+    second: testgamesprites_25
+  - first:
+      213: -8759322898128639865
+    second: testgamesprites_26
+  - first:
+      213: 7295128434127251895
+    second: testgamesprites_27
+  - first:
+      213: -914117061123972668
+    second: testgamesprites_28
+  - first:
+      213: 5690298848919886273
+    second: testgamesprites_29
+  - first:
+      213: 1121590698591480101
+    second: testgamesprites_30
+  - first:
+      213: 7829146763460268052
+    second: testgamesprites_31
+  - first:
+      213: 8792053889051976249
+    second: testgamesprites_32
+  - first:
+      213: -3054674697952063380
+    second: testgamesprites_33
+  - first:
+      213: -2679721479694625168
+    second: testgamesprites_34
+  - first:
+      213: 8943004657411095221
+    second: testgamesprites_35
+  - first:
+      213: -6951733346538966439
+    second: testgamesprites_36
+  - first:
+      213: -6417756796474882313
+    second: testgamesprites_37
+  - first:
+      213: -7426827323995325874
+    second: testgamesprites_38
+  - first:
+      213: -3905873934800843676
+    second: testgamesprites_39
+  - first:
+      213: 3872159861359463775
+    second: testgamesprites_40
+  - first:
+      213: -6045415292339189325
+    second: testgamesprites_41
+  - first:
+      213: -627351276587898820
+    second: testgamesprites_42
+  - first:
+      213: 3498658015222525741
+    second: testgamesprites_43
+  - first:
+      213: 3170140259199345785
+    second: testgamesprites_44
+  - first:
+      213: -5372358290089255334
+    second: testgamesprites_45
+  - first:
+      213: -281565942644213784
+    second: testgamesprites_46
+  - first:
+      213: -714967521093642705
+    second: testgamesprites_47
+  - first:
+      213: -3246280798117851299
+    second: testgamesprites_48
+  - first:
+      213: -7490410528853964948
+    second: testgamesprites_49
+  - first:
+      213: -714252276651122917
+    second: testgamesprites_50
+  - first:
+      213: -8074389333718169562
+    second: testgamesprites_51
+  - first:
+      213: 101661179272577304
+    second: testgamesprites_52
+  - first:
+      213: 2188572082997484677
+    second: testgamesprites_53
+  - first:
+      213: 2667455281414765316
+    second: testgamesprites_54
+  - first:
+      213: -1062415890042767257
+    second: testgamesprites_55
+  - first:
+      213: 1379018895845529086
+    second: testgamesprites_56
+  - first:
+      213: -6371801963748092096
+    second: testgamesprites_57
+  - first:
+      213: -4864678093251645561
+    second: testgamesprites_58
+  - first:
+      213: -4246410435471200625
+    second: testgamesprites_59
+  - first:
+      213: 3528930616939893576
+    second: testgamesprites_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: testgamesprites_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 559
+        width: 225
+        height: 443
+      alignment: 9
+      pivot: {x: 0.48, y: 0.4356659}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c857e5ec4f4c721b0800000000000000
+      internalID: -5681355849191230068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 559
+        width: 269
+        height: 443
+      alignment: 9
+      pivot: {x: 0.464684, y: 0.46726862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18d7e7dcfd46592b0800000000000000
+      internalID: -5578441651040387711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 554
+        width: 201
+        height: 430
+      alignment: 9
+      pivot: {x: 0.47761193, y: 0.4604651}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913a415032a000700800000000000000
+      internalID: 504414303790867225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_3
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 606
+        width: 207
+        height: 395
+      alignment: 9
+      pivot: {x: 0.5603865, y: 0.521519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e2b3d437c3733e0800000000000000
+      internalID: -2074122637466194397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_4
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 483
+        width: 335
+        height: 535
+      alignment: 9
+      pivot: {x: 0.49552238, y: 0.5140187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec31ae861ee6c830800000000000000
+      internalID: 4091219092162297068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_5
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 967
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcb679d5452aec050800000000000000
+      internalID: 5822769851467787213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_6
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 977
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e8bfac8d1b23760800000000000000
+      internalID: 7436201479418646017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_7
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 814
+        width: 123
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0389f0a622cfb9680800000000000000
+      internalID: -8747120626498562000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 911
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cc0645813be9b40800000000000000
+      internalID: 5448989516241095697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_9
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 947
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550d4f10853e6c9f0800000000000000
+      internalID: -448421145747337131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_10
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 911
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14af8a6491f0a7e60800000000000000
+      internalID: 7960691892564851265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_11
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 890
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c319c10f87eef5b0800000000000000
+      internalID: -5332570307363793976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_12
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 893
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92069fccdafda2e0800000000000000
+      internalID: -2112756823884430689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_13
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 911
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad874a02a15a61ad0800000000000000
+      internalID: -2731814592318244646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_14
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 871
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48f20899c60bda40800000000000000
+      internalID: 5393912441614825548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_15
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 871
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e285d3f3142272e0800000000000000
+      internalID: -2129600005678988568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_16
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 463
+        width: 267
+        height: 440
+      alignment: 9
+      pivot: {x: 0.41947564, y: 0.3840909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f15a7e2fc40e6b50800000000000000
+      internalID: 6588208592774124018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_17
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 875
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de8ca4c235a1cc30800000000000000
+      internalID: 4377961950247423697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_18
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 871
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6feee96e2b3e53400800000000000000
+      internalID: 303398907430235894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_19
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 787
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c3284f4c51be6a0800000000000000
+      internalID: -6419012908226560971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 703
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0591ca90d9deeb00800000000000000
+      internalID: 859864068847146253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_21
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 621
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b2fbda2b9815060800000000000000
+      internalID: 6940479901266815879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_22
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 567
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2506460caabc9d0800000000000000
+      internalID: -2752919003912449305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_23
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 562
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1489a8686904fbf40800000000000000
+      internalID: 5746382664794544193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_24
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 251
+        width: 375
+        height: 299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d583930012c688e0800000000000000
+      internalID: -1691451235995777577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_25
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 546
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a21236c7adb7340800000000000000
+      internalID: 4862720450450500103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_26
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 517
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788e818ab32a07680800000000000000
+      internalID: -8759322898128639865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_27
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 509
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9a10bd8a08d3560800000000000000
+      internalID: 7295128434127251895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_28
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 295
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1e49840676053f0800000000000000
+      internalID: -914117061123972668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_29
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 213
+        width: 209
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c91fa397a008fe40800000000000000
+      internalID: 5690298848919886273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_30
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 239
+        width: 223
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5296de44cc0b09f00800000000000000
+      internalID: 1121590698591480101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_31
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 285
+        width: 236
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410d2723087b6ac60800000000000000
+      internalID: 7829146763460268052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_32
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 273
+        width: 239
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932e8070e66a30a70800000000000000
+      internalID: 8792053889051976249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_33
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 267
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60913ceb8d9b95d0800000000000000
+      internalID: -3054674697952063380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_34
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 215
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07651d11387bfcad0800000000000000
+      internalID: -2679721479694625168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_35
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 219
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5baf6a59a5feb1c70800000000000000
+      internalID: 8943004657411095221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_36
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 231
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952be4a6a5b768f90800000000000000
+      internalID: -6951733346538966439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_37
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 271
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f60443423c8fe6a0800000000000000
+      internalID: -6417756796474882313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_38
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 0
+        width: 359
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4af719d5eb9ee890800000000000000
+      internalID: -7426827323995325874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_39
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 0
+        width: 419
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c0dbab95c8bc9c0800000000000000
+      internalID: -3905873934800843676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 245
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d4bd9d0ecacb530800000000000000
+      internalID: 3872159861359463775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 0
+        width: 295
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9886452de5a1ca0800000000000000
+      internalID: -6045415292339189325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_42
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 221
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38279976533b47f0800000000000000
+      internalID: -627351276587898820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 217
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f69eb9deabd8030800000000000000
+      internalID: 3498658015222525741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_44
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 191
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 974edb505c99efb20800000000000000
+      internalID: 3170140259199345785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_45
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 147
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eda11699c8175b0800000000000000
+      internalID: -5372358290089255334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_46
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 133
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7f7d7544da71cf0800000000000000
+      internalID: -281565942644213784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_47
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 127
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26954fd3dce316f0800000000000000
+      internalID: -714967521093642705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_48
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 285
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f830b40d4e2f2d0800000000000000
+      internalID: -3246280798117851299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_49
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 147
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6740d55f47bc0890800000000000000
+      internalID: -7490410528853964948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_50
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 101
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f1232b6577616f0800000000000000
+      internalID: -714252276651122917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_51
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 69
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62886815ea102ff80800000000000000
+      internalID: -8074389333718169562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_52
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 17
+        width: 66
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8114dfdcd4c296100800000000000000
+      internalID: 101661179272577304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_53
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 21
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cd664c6be5f5e10800000000000000
+      internalID: 2188572082997484677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 33
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b77f61274b40520800000000000000
+      internalID: 2667455281414765316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_55
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 33
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768354e706a8141f0800000000000000
+      internalID: -1062415890042767257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_56
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 27
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef59c612162432310800000000000000
+      internalID: 1379018895845529086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_57
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 2
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04798ab8fdfc297a0800000000000000
+      internalID: -6371801963748092096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 23
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f6c116c013d7cb0800000000000000
+      internalID: -4864678093251645561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_59
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 30
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e2a371538b115c0800000000000000
+      internalID: -4246410435471200625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: testgamesprites_60
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 17
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843d3b3f2b749f030800000000000000
+      internalID: 3528930616939893576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 642b9037183de154d9feec838df39463
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      testgamesprites_0: -5681355849191230068
+      testgamesprites_1: -5578441651040387711
+      testgamesprites_10: 7960691892564851265
+      testgamesprites_11: -5332570307363793976
+      testgamesprites_12: -2112756823884430689
+      testgamesprites_13: -2731814592318244646
+      testgamesprites_14: 5393912441614825548
+      testgamesprites_15: -2129600005678988568
+      testgamesprites_16: 6588208592774124018
+      testgamesprites_17: 4377961950247423697
+      testgamesprites_18: 303398907430235894
+      testgamesprites_19: -6419012908226560971
+      testgamesprites_2: 504414303790867225
+      testgamesprites_20: 859864068847146253
+      testgamesprites_21: 6940479901266815879
+      testgamesprites_22: -2752919003912449305
+      testgamesprites_23: 5746382664794544193
+      testgamesprites_24: -1691451235995777577
+      testgamesprites_25: 4862720450450500103
+      testgamesprites_26: -8759322898128639865
+      testgamesprites_27: 7295128434127251895
+      testgamesprites_28: -914117061123972668
+      testgamesprites_29: 5690298848919886273
+      testgamesprites_3: -2074122637466194397
+      testgamesprites_30: 1121590698591480101
+      testgamesprites_31: 7829146763460268052
+      testgamesprites_32: 8792053889051976249
+      testgamesprites_33: -3054674697952063380
+      testgamesprites_34: -2679721479694625168
+      testgamesprites_35: 8943004657411095221
+      testgamesprites_36: -6951733346538966439
+      testgamesprites_37: -6417756796474882313
+      testgamesprites_38: -7426827323995325874
+      testgamesprites_39: -3905873934800843676
+      testgamesprites_4: 4091219092162297068
+      testgamesprites_40: 3872159861359463775
+      testgamesprites_41: -6045415292339189325
+      testgamesprites_42: -627351276587898820
+      testgamesprites_43: 3498658015222525741
+      testgamesprites_44: 3170140259199345785
+      testgamesprites_45: -5372358290089255334
+      testgamesprites_46: -281565942644213784
+      testgamesprites_47: -714967521093642705
+      testgamesprites_48: -3246280798117851299
+      testgamesprites_49: -7490410528853964948
+      testgamesprites_5: 5822769851467787213
+      testgamesprites_50: -714252276651122917
+      testgamesprites_51: -8074389333718169562
+      testgamesprites_52: 101661179272577304
+      testgamesprites_53: 2188572082997484677
+      testgamesprites_54: 2667455281414765316
+      testgamesprites_55: -1062415890042767257
+      testgamesprites_56: 1379018895845529086
+      testgamesprites_57: -6371801963748092096
+      testgamesprites_58: -4864678093251645561
+      testgamesprites_59: -4246410435471200625
+      testgamesprites_6: 7436201479418646017
+      testgamesprites_60: 3528930616939893576
+      testgamesprites_7: -8747120626498562000
+      testgamesprites_8: 5448989516241095697
+      testgamesprites_9: -448421145747337131
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

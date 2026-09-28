@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3865fc7de3f5b7d4a9b832cb680cee55, type: 3}
+  m_Name: Dragon
+  m_EditorClassIdentifier: Assembly-CSharp::GodTower.Data.MonsterProfile
+  displayName: Dragon
+  prefab: {fileID: 5650423630096164307, guid: ed7afb02a2246614da8d0e93b155ef48, type: 3}
+  scale: 0.35
+  artFacesRight: 0
+  centerOffset: {x: 0, y: 4}
+  attackPoint: {x: 4.5, y: 4.5}
+  orbitRadius: 2.4
+  attackEffect: {fileID: 8764043878647920493, guid: c4ed38c72957f2241ad144a1614956d9, type: 3}
+  grabEffect: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}

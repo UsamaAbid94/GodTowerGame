@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db3ee338a93ae844f94ea3b7f5eb533d, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier: Assembly-CSharp::GodTower.Data.LevelConfig
+  displayName: Cloud Sea
+  goalMeters: 1500
+  skyTint: {r: 0.86, g: 0.93, b: 1, a: 1}
+  towerTint: {r: 0.72, g: 0.8, b: 0.7, a: 1}
+  cloudTint: {r: 1, g: 1, b: 1, a: 1}
+  cloudDensity: 0.85
+  lightning: 0
+  ambientEffect: {fileID: 3696007233179127096, guid: c248f95ffea8b8543bc7ad0fffe0216d, type: 3}
+  hazardInterval: {x: 4.2, y: 3.4}
+  maxHazardsPerWave: 1
+  hazardFallSpeed: 6.5
+  knockbackMeters: 90
+  hazards:
+  - profile: {fileID: 11400000, guid: 4c165d6e7858ff342bb0834eed350904, type: 2}
+    weight: 0.55
+  - profile: {fileID: 11400000, guid: a589e79f2772b25418e632da835c8aa1, type: 2}
+    weight: 0.2
+  - profile: {fileID: 11400000, guid: 76ebeac2db9d3bd49acfbfcf062ef2aa, type: 2}
+    weight: 0.25
+  helperChance: 0.4
+  ambushes:
+  - atProgress: 0.6
+    monsters:
+    - {fileID: 11400000, guid: 84717e4aa214d6d4192a357d751171b7, type: 2}
+    dragMeters: 180
