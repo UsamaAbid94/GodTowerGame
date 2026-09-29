@@ -34,6 +34,7 @@ namespace GodTower.Gameplay.Hazards
         private float _knockbackMeters;
         private float _baseScale;
         private float _age;
+        private bool _passedClimber;
         private GameObject _trail;
 
         private HazardSpawner _owner;
@@ -100,6 +101,7 @@ namespace GodTower.Gameplay.Hazards
             spriteRenderer.sortingOrder = sortingOrder;
             _baseScale = scale;
             _age = 0f;
+            _passedClimber = false;
             transform.SetPositionAndRotation(position, Quaternion.identity);
             transform.localScale = Vector3.one * scale;
             gameObject.SetActive(true);
@@ -135,8 +137,26 @@ namespace GodTower.Gameplay.Hazards
                 }
             }
 
+            if (_hazard != null && !_passedClimber)
+                CheckNearMiss();
+
             if (leftView)
                 Despawn();
+        }
+
+        /// <summary>The moment a hazard crosses the climber's height in a neighbouring lane, it may count as a dodge.</summary>
+        private void CheckNearMiss()
+        {
+            var climberPoint = _climber.HitPoint;
+            float dy = transform.position.y - climberPoint.y;
+            if (_velocityY < 0f ? dy > 0f : dy < 0f)
+                return;
+
+            _passedClimber = true;
+            float dx = Mathf.Abs(transform.position.x - climberPoint.x);
+            float spacing = _climber.LaneSpacing;
+            if (dx > spacing * 0.5f && dx < spacing * 1.5f)
+                _climber.RegisterNearMiss(transform.position);
         }
 
         private bool TryAffectClimber()

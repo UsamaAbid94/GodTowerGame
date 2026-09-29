@@ -14,6 +14,7 @@ namespace GodTower.Sound
         Lose,
         Thunder,
         Countdown,
-        Go
+        Go,
+        Firework
     }
 }

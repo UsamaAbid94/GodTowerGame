@@ -1,0 +1,12 @@
+# ninja log v5
+89	389	8123445663007780	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	49875820420e36d8
+391	649	8123445665274652	C:/Users/usama/Documents/Github/GodTowerGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3q133o24/obj/arm64-v8a/libswappywrapper.so	77911edc3168326c
+43	1339	8123445672452573	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	e0f238bf9a79cfd2
+33	1392	8123445672919537	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	804a28fb49c008e5
+1	1412	8123445673077436	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	d5df65333c3c15fb
+67	1417	8123445673107506	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2617bc9d9bf5b321
+20	1463	8123445673653639	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	8a602921b739a2b7
+78	1611	8123445675185499	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	281acb97eb046519
+55	1652	8123445675586024	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	4937a558be59743e
+11	1729	8123445676348884	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b27f87cd090cc2c8
+1730	1842	8123445677488629	C:/Users/usama/Documents/Github/GodTowerGame/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3q133o24/obj/arm64-v8a/libgame.so	ea6e84a0995c12f2

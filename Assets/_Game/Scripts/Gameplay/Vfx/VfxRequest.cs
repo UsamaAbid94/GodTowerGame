@@ -13,6 +13,10 @@ namespace GodTower.Gameplay.Vfx
         public float Spin;
         public Vector3 Velocity;
         public float Gravity;
+        /// <summary>Air resistance per second: confetti bursts out fast, then drifts.</summary>
+        public float Drag;
+        /// <summary>Paper-flip rate (radians per second) with a matching side-to-side sway. 0 = off.</summary>
+        public float Flutter;
         public Color Color;
         public int SortingOrder;
         public Transform Follow;

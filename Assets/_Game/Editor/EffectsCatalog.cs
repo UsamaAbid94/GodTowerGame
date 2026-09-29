@@ -180,6 +180,11 @@ namespace GodTower.EditorTools
             library.barrageFinisherText = Cfx("Texts/CFXR2 _WHAM_ 3");
             library.winFireworks = Cfx("Explosions/CFXR4 Firework 1 Cyan-Purple (HDR)");
             library.winText = Cfx("Texts/CFXR3 _WOW_");
+            library.summitFlash = Cfx("Misc/CFXR Flash");
+            library.summitShockwave = Cfx("Impacts/CFXR2 Ground Hit");
+            library.summitRays = Cfx("Fire/CFXR4 Sun");
+            library.fireworkRocket = Cfx("Explosions/CFXR4 Firework HDR Shoot Single (Random Color)");
+            library.sparkRain = Cfx("Electric/CFXR2 Sparks Rain");
             EditorUtility.SetDirty(library);
         }
 

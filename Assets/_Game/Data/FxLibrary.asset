@@ -27,3 +27,8 @@ MonoBehaviour:
   barrageFinisherText: {fileID: 6889676053574524597, guid: 1244a9e4f6193654989497ad418a287b, type: 3}
   winFireworks: {fileID: 8791802859087666345, guid: ae07f2a45f14a82428409cfe410e6002, type: 3}
   winText: {fileID: 2883797502249945402, guid: 1e54877675f6e4a46ad7ca7c4d7a5bf6, type: 3}
+  summitFlash: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5, type: 3}
+  summitShockwave: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  summitRays: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f, type: 3}
+  fireworkRocket: {fileID: 1978689737715041617, guid: afa54037ffe627545886e2741abb365d, type: 3}
+  sparkRain: {fileID: 763799897560185588, guid: 798157bad7358b04499c9d71cd3c0d9b, type: 3}

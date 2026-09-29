@@ -40,7 +40,7 @@ Android build target.
 ### Controls
 | Action | Touch | Keyboard (editor) |
 |---|---|---|
-| Climb | Tap or **hold** anywhere | Space / W / ↑ |
+| Climb | Tap or **hold** anywhere; **tap fast** to build momentum | Space / W / ↑ (tap repeatedly for momentum) |
 | Change lane (dodge) | **Swipe** left / right | A / D / ← / → |
 | Break free from a monster | Tap fast | Space (mash) |
 | Pause | Pause button | Esc |
@@ -133,6 +133,15 @@ height and lose by losing all 5 hearts. Winning unlocks the next level; stars de
   2. It glides back down as they dive at the climber.
   3. They grab the climber and drag them down; tapping fast breaks free sooner.
   4. A Super Saiyan rush or a Kamehameha repels them.
+- **Momentum**: tapping in rhythm (each tap within 0.4 s of the last) builds momentum, which makes every step up to
+  70% taller, puffs bigger grip dust, sparkles and pulls the camera back slightly. Holding climbs at the base rate.
+  Momentum fades when the rhythm breaks and is lost on a hit; filling it pops a light burst and an "ON FIRE!" call-out.
+- **Near misses**: switching lane and letting a hazard skim past in the neighbouring lane is a dodge: a tiny
+  freeze-frame, sparkles, a whoosh and a big momentum top-up.
+- **Summit celebration**: reaching the goal lands like a hit (freeze-frame, flash, shockwave, shake, zoom punch), then
+  the camera pulls back on sun rays behind the climber and a golden spark rain. Two confetti cannons fire from the
+  bottom corners, followed by a firework show of rockets and sky bursts, each with its own confetti. Confetti keeps
+  raining behind the result panel, and every star it awards pops another firework and confetti burst.
 - **Camera**: follow, a fly-in during the intro countdown, zoom-out while falling or boosting,
   zoom punches on impact, pull-back on victory, and trauma-based screen shake.
 

@@ -40,5 +40,15 @@ namespace GodTower.Gameplay.Vfx
         [Header("Victory")]
         public GameObject winFireworks;
         public GameObject winText;
+        [Tooltip("Bright flash the moment the summit is reached.")]
+        public GameObject summitFlash;
+        [Tooltip("Shockwave ring around the climber on reaching the summit.")]
+        public GameObject summitShockwave;
+        [Tooltip("Looping radiant sun rays behind the climber while celebrating.")]
+        public GameObject summitRays;
+        [Tooltip("A rocket shot up from below that bursts into a random colour.")]
+        public GameObject fireworkRocket;
+        [Tooltip("Looping golden sparks raining over the view while celebrating.")]
+        public GameObject sparkRain;
     }
 }

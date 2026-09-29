@@ -30,6 +30,7 @@ namespace GodTower.Sound
                 case Sfx.Thunder: return Render("thunder", 1.6f, Thunder);
                 case Sfx.Countdown: return Render("countdown", 0.18f, (t, d) => Square(660f, t) * Decay(t, 14f) * 0.25f);
                 case Sfx.Go: return Render("go", 0.4f, (t, d) => Square(990f, t) * Decay(t, 6f) * 0.25f);
+                case Sfx.Firework: return Render("firework", 1.1f, Firework);
                 default: return null;
             }
         }
@@ -135,6 +136,23 @@ namespace GodTower.Sound
             float crack = Noise() * Decay(t, 25f);
             float rumble = LowPassNoise(0.03f) * Decay(t, 2f) * 2.2f;
             return Saturate(crack * 0.6f + rumble) * 0.7f;
+        }
+
+        /// <summary>A rising whistle, a deep boom, then a tail of random crackles.</summary>
+        private static float Firework(float t, float d)
+        {
+            const float launch = 0.22f;
+            if (t < launch)
+            {
+                float freq = Mathf.Lerp(900f, 2200f, t / launch);
+                return Sine(freq, t) * (t / launch) * 0.12f;
+            }
+
+            float bt = t - launch;
+            float boom = Sine(Mathf.Lerp(90f, 40f, Mathf.Min(1f, bt * 3f)), bt) * Decay(bt, 7f) * 0.9f;
+            float blast = LowPassNoise(0.25f) * Decay(bt, 10f) * 0.6f;
+            float crackle = Noise() > 0.994f ? Noise() * Decay(bt, 2.2f) * 0.8f : 0f;
+            return Saturate(boom + blast + crackle) * 0.6f;
         }
 
         // --- Rendering helpers -------------------------------------------------------------

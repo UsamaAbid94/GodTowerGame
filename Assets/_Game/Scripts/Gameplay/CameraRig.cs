@@ -32,6 +32,8 @@ namespace GodTower.Gameplay
         [Header("Zoom")]
         [SerializeField] private float zoomPerFallSpeed = 0.35f;
         [SerializeField] private float boostZoom = 1.5f;
+        [Tooltip("Extra view size at full climbing momentum, to sell the speed.")]
+        [SerializeField] private float momentumZoom = 1f;
         [SerializeField] private float zoomSmoothTime = 0.3f;
         [Tooltip("How fast an instant zoom kick (impact punch-in) settles back, per second.")]
         [SerializeField] private float zoomKickRecovery = 6f;
@@ -161,6 +163,7 @@ namespace GodTower.Gameplay
                 desired += Mathf.Max(0f, -target.VerticalSpeed) * zoomPerFallSpeed;
                 if (target.IsBoosting)
                     desired += boostZoom;
+                desired += target.Momentum * momentumZoom;
             }
 
             desired = Mathf.Clamp(desired, 3f, maxSize);

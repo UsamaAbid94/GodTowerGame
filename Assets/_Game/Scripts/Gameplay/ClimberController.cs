@@ -23,6 +23,7 @@ namespace GodTower.Gameplay
     /// Poses are Animator states (Hang / Climb / Hit / Fall) on the body; lane lean and impact
     /// jolts are applied to the parent <see cref="visual"/> so they layer on top of the clips.
     /// </summary>
+    [DefaultExecutionOrder(-50)] // Pose sprites are set in LateUpdate, ahead of the DropShadow that copies them.
     public class ClimberController : MonoBehaviour
     {
         private static readonly int HangAnim = Animator.StringToHash("Hang");
@@ -37,6 +38,16 @@ namespace GodTower.Gameplay
         [SerializeField] private Animator animator;
         [SerializeField] private SpriteRenderer boostAura;
         [SerializeField] private VfxPool vfx;
+
+        [Header("Hand-over-hand poses")]
+        [Tooltip("Start of a step: one arm stretches up for the next grip. Drawn with the right arm up; mirrored for the left.")]
+        [SerializeField] private Sprite reachPose;
+        [Tooltip("Second half of a step: the body pulls up to the new grip, knee lifted.")]
+        [SerializeField] private Sprite pullPose;
+        [Tooltip("Fraction of a step spent on the reach pose before switching to the pull.")]
+        [SerializeField, Range(0.1f, 0.9f)] private float reachShare = 0.45f;
+        [Tooltip("Seconds per arm while the Super Saiyan rush carries the climber up.")]
+        [SerializeField] private float boostArmTime = 0.09f;
 
         [Header("Climbing")]
         [SerializeField] private float stepHeight = 0.55f;
@@ -73,6 +84,20 @@ namespace GodTower.Gameplay
         [Header("Boost")]
         [SerializeField] private float boostSpeed = 12f;
 
+        [Header("Momentum")]
+        [Tooltip("Momentum gained by each tap that follows the previous one within the window. Holding climbs at the base rate.")]
+        [SerializeField, Range(0f, 1f)] private float tapMomentum = 0.12f;
+        [SerializeField] private float momentumWindow = 0.4f;
+        [Tooltip("Momentum lost per second once the tapping rhythm breaks.")]
+        [SerializeField] private float momentumDecay = 0.6f;
+        [Tooltip("Extra step height at full momentum, as a fraction of the base step.")]
+        [SerializeField] private float maxStepBonus = 0.7f;
+
+        [Header("Near miss")]
+        [Tooltip("A hazard passing in a neighbouring lane counts as a dodge if the climber changed lane this recently.")]
+        [SerializeField] private float nearMissWindow = 1.2f;
+        [SerializeField, Range(0f, 1f)] private float nearMissMomentum = 0.35f;
+
         private ClimberState _state = ClimberState.Hanging;
         private bool _inputEnabled;
 
@@ -85,6 +110,10 @@ namespace GodTower.Gameplay
 
         private int _lane;
         private float _laneVelocity;
+        private float _lastLaneChange = -10f;
+
+        private float _momentum;
+        private float _lastTap = -10f;
 
         private float _velocityY;
         private float _fallTargetY;
@@ -93,6 +122,9 @@ namespace GodTower.Gameplay
         private float _invulnerableTimer;
         private float _boostTimer;
         private float _ceilingY = float.PositiveInfinity;
+
+        private bool _leftHand; // Arm reaching on the current step; flips every step.
+        private float _boostArmTimer;
 
         private Vector3 _joltOffset;
         private int _currentAnim;
@@ -108,12 +140,22 @@ namespace GodTower.Gameplay
         public event Action BoostStarted;
         public event Action BoostEnded;
 
+        /// <summary>Raised when fast tapping (or dodging) fills momentum to the top.</summary>
+        public event Action MomentumMaxed;
+
+        /// <summary>Raised when a hazard skims past right after a lane change.</summary>
+        public event Action<Vector3> NearMissed;
+
         public ClimberState State => _state;
         public float CurrentMeters => Mathf.Max(0f, WorldScale.ToMeters(transform.position.y));
         public float VerticalSpeed => _state == ClimberState.Falling || _state == ClimberState.Lost ? _velocityY : 0f;
         public bool IsBoosting => _state == ClimberState.Boosting;
         public Vector3 HitPoint => body.bounds.center;
         public int LaneCount => laneCount;
+        public float LaneSpacing => laneSpacing;
+
+        /// <summary>0..1, built by tapping in rhythm and by near misses; makes each step taller.</summary>
+        public float Momentum => _momentum;
 
         public bool CanBeHit =>
             _invulnerableTimer <= 0f && (_state == ClimberState.Hanging || _state == ClimberState.Climbing);
@@ -144,6 +186,22 @@ namespace GodTower.Gameplay
             vfx.Impact(HitPoint, 1f);
             GameAudio.Play(Sfx.Hit, 1f, 0.1f);
             Damaged?.Invoke();
+        }
+
+        /// <summary>
+        /// A hazard just passed at <paramref name="at"/> without connecting. It counts as a dodge only
+        /// if the climber changed lane recently; that tops up momentum.
+        /// </summary>
+        public void RegisterNearMiss(Vector3 at)
+        {
+            if (!CanBeHit || Time.time - _lastLaneChange > nearMissWindow)
+                return;
+
+            AddMomentum(nearMissMomentum);
+            vfx.Sparkles(Vector3.Lerp(at, HitPoint, 0.5f), 8, 0.8f);
+            HitStop.Freeze(0.06f);
+            GameAudio.Play(Sfx.Whoosh, 0.9f, 0.15f);
+            NearMissed?.Invoke(at);
         }
 
         /// <summary>Open-ended stun used by the webhook glove barrage; end it with <see cref="ReleaseStun"/>.</summary>
@@ -190,6 +248,7 @@ namespace GodTower.Gameplay
         {
             _state = ClimberState.Won;
             _inputEnabled = false;
+            _momentum = 0f;
             SetBoosting(false);
             _stepFromY = transform.position.y;
             _stepToY = standY;
@@ -200,6 +259,7 @@ namespace GodTower.Gameplay
         {
             _state = ClimberState.Lost;
             _inputEnabled = false;
+            _momentum = 0f;
             SetBoosting(false);
             _velocityY = 4f;
             GameAudio.Play(Sfx.Whoosh);
@@ -244,6 +304,17 @@ namespace GodTower.Gameplay
 
         private void UpdateClimbing(float dt)
         {
+            if (_inputEnabled && input.ClimbPressed)
+            {
+                if (Time.time - _lastTap <= momentumWindow)
+                    AddMomentum(tapMomentum);
+                _lastTap = Time.time;
+            }
+            else if (Time.time - _lastTap > momentumWindow)
+            {
+                _momentum = Mathf.Max(0f, _momentum - momentumDecay * dt);
+            }
+
             if (_inputEnabled && (input.ClimbPressed || (input.ClimbHeld && Time.time - _lastStepStart >= holdCadence)))
             {
                 if (_state == ClimberState.Climbing)
@@ -281,10 +352,24 @@ namespace GodTower.Gameplay
             _settleTimer = 0f;
             _lastStepStart = Time.time;
             _stepFromY = transform.position.y;
-            _stepToY = Mathf.Min(_stepFromY + stepHeight, _ceilingY);
-            GameAudio.Play(Sfx.Grab, 0.35f, 0.15f);
-            _squash = stepStretch;
-            vfx.Puff(HitPoint + new Vector3(UnityEngine.Random.Range(-0.3f, 0.3f), gripHeight, -0.1f), 0.35f);
+            _stepToY = Mathf.Min(_stepFromY + stepHeight * (1f + maxStepBonus * _momentum), _ceilingY);
+            _leftHand = !_leftHand;
+            // Grips get louder and puffs bigger with momentum, so a good rhythm is audible and visible.
+            GameAudio.Play(Sfx.Grab, 0.35f + 0.3f * _momentum, 0.15f);
+            _squash = stepStretch * (1f + _momentum);
+            // Dust where the reaching hand grabs.
+            float handX = (_leftHand ? -1f : 1f) * UnityEngine.Random.Range(0.2f, 0.35f);
+            vfx.Puff(HitPoint + new Vector3(handX, gripHeight, -0.1f), 0.35f + 0.25f * _momentum);
+            if (_momentum > 0.6f)
+                vfx.Sparkles(HitPoint + Vector3.down * 0.6f, 3, 0.45f);
+        }
+
+        private void AddMomentum(float amount)
+        {
+            bool wasFull = _momentum >= 1f;
+            _momentum = Mathf.Min(1f, _momentum + amount);
+            if (!wasFull && _momentum >= 1f)
+                MomentumMaxed?.Invoke();
         }
 
         private void UpdateLane(float dt)
@@ -295,6 +380,7 @@ namespace GodTower.Gameplay
                 if (next != _lane)
                 {
                     _lane = next;
+                    _lastLaneChange = Time.time;
                     GameAudio.Play(Sfx.Whoosh, 0.35f, 0.1f);
                 }
             }
@@ -307,6 +393,12 @@ namespace GodTower.Gameplay
         private void UpdateBoost(float dt)
         {
             _boostTimer -= dt;
+            _boostArmTimer += dt;
+            if (_boostArmTimer >= boostArmTime)
+            {
+                _boostArmTimer = 0f;
+                _leftHand = !_leftHand;
+            }
             SetY(Mathf.Min(transform.position.y + boostSpeed * dt, _ceilingY));
             if (_boostTimer > 0f)
                 return;
@@ -334,6 +426,7 @@ namespace GodTower.Gameplay
             _stunTimer = duration;
             _pendingKnockbackMeters = knockbackMeters;
             _stepQueued = false;
+            _momentum = 0f;
             SetBoosting(false);
         }
 
@@ -387,6 +480,27 @@ namespace GodTower.Gameplay
             transform.position = p;
         }
 
+        /// <summary>
+        /// Hand-over-hand: each step shows the reach pose, then the pull pose, and the next step mirrors them so the
+        /// arms alternate. Runs after the Animator, overriding the Climb clip's free-running frames, which would drift
+        /// out of step with the actual climbing.
+        /// </summary>
+        private void LateUpdate()
+        {
+            if (reachPose == null || pullPose == null)
+                return;
+
+            if (_state == ClimberState.Climbing)
+                body.sprite = _stepTimer < stepDuration * reachShare ? reachPose : pullPose;
+            else if (_state == ClimberState.Boosting)
+                body.sprite = _boostArmTimer < boostArmTime * reachShare ? reachPose : pullPose;
+            else
+                return;
+
+            // Older generated Climb clips also bob the body on their own clock; the step's squash & stretch replaces that.
+            body.transform.localPosition = Vector3.zero;
+        }
+
         /// <summary>Switches pose clip only on change, so looping clips aren't restarted every frame.</summary>
         private void PlayAnim(int stateHash)
         {
@@ -417,7 +531,7 @@ namespace GodTower.Gameplay
                 case ClimberState.Climbing:
                 case ClimberState.Boosting:
                     PlayAnim(ClimbAnim);
-                    body.flipX = false;
+                    body.flipX = _leftHand; // The pose art reaches with the right arm; mirror it for the left.
                     break;
                 case ClimberState.Stunned:
                     PlayAnim(HitAnim);

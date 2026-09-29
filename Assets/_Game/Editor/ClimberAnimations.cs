@@ -15,7 +15,7 @@ namespace GodTower.EditorTools
     {
         private const string SpriteProperty = "m_Sprite";
 
-        /// <summary>One hand-over-hand frame per 0.1 s: a full 1-2-3-2 cycle spans two climb steps (0.2 s hold cadence each).</summary>
+        /// <summary>Length of the single-frame Climb clip; the per-step poses are driven from code.</summary>
         private const float ClimbFrameTime = 0.1f;
 
         public static void Build(string directory, string controllerPath)
@@ -24,8 +24,6 @@ namespace GodTower.EditorTools
 
             var hang = ArtPipeline.Load(ArtPipeline.ClimberHang);
             var climb1 = ArtPipeline.Load(ArtPipeline.ClimberClimb1);
-            var climb2 = ArtPipeline.Load(ArtPipeline.ClimberClimb2);
-            var climb3 = ArtPipeline.Load(ArtPipeline.ClimberClimb3);
             var hit = ArtPipeline.Load(ArtPipeline.ClimberHit);
             var fall = ArtPipeline.Load(ArtPipeline.ClimberFall);
 
@@ -36,9 +34,9 @@ namespace GodTower.EditorTools
                 Position(clip, (0f, 0f, 0f), (1f, 0f, -0.04f), (2f, 0f, 0f));
             });
 
-            // Hand-over-hand: reach (1) → pull (2) → other hand reaches (3) → pull (2), with a lift on each pull.
-            var climbClip = Clip(directory, "Climb", ClimbFrameTime, new[] { climb1, climb2, climb3, climb2 }, 4 * ClimbFrameTime, clip =>
-                Position(clip, (0f, 0f, 0f), (0.1f, 0f, 0.06f), (0.2f, 0f, 0f), (0.3f, 0f, 0.06f), (0.4f, 0f, 0f)));
+            // Climbing pose holder. The sheet's climb frames all reach with the right arm, so a free-running loop can't
+            // alternate hands; ClimberController drives reach → pull per step and mirrors every other step instead.
+            var climbClip = Clip(directory, "Climb", ClimbFrameTime, new[] { climb1 }, ClimbFrameTime, clip => { });
 
             // Getting punched: fast decaying shake with a squash on each impact. Loops for the long webhook barrage.
             var hitClip = Clip(directory, "Hit", 0.36f, new[] { hit }, 0.36f, clip =>

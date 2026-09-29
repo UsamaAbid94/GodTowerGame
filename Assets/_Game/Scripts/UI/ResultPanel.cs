@@ -26,6 +26,9 @@ namespace GodTower.UI
         public event Action RetryRequested;
         public event Action HomeRequested;
 
+        /// <summary>Raised as each earned star pops in (0-based), so the world behind the panel can celebrate it.</summary>
+        public event Action<int> StarRevealed;
+
         private void Awake()
         {
             root.SetActive(false);
@@ -69,6 +72,8 @@ namespace GodTower.UI
             {
                 stars[i].color = Color.white;
                 GameAudio.Play(Sfx.Countdown, 0.8f);
+                StarRevealed?.Invoke(i);
+                StartCoroutine(UiTween.Scale(panel, 1.06f, 1f, 0.2f, Ease.OutQuad));
                 yield return UiTween.Scale(stars[i].transform, 2f, 1f, 0.25f, Ease.OutBack);
             }
         }

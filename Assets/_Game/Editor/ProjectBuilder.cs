@@ -374,7 +374,8 @@ namespace GodTower.EditorTools
             aura.color = new Color(1f, 0.9f, 0.5f, 0.85f);
             var climber = climberGo.AddComponent<ClimberController>();
             Ui.Wire(climber, ("input", input), ("visual", visual), ("body", body), ("animator", animator),
-                ("boostAura", aura), ("vfx", vfx));
+                ("boostAura", aura), ("vfx", vfx),
+                ("reachPose", ArtPipeline.Load(ArtPipeline.ClimberClimb1)), ("pullPose", ArtPipeline.Load(ArtPipeline.ClimberClimb3)));
 
             Ui.Wire(rig, ("cam", camera), ("target", climber));
 

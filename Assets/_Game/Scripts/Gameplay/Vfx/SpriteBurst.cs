@@ -14,6 +14,9 @@ namespace GodTower.Gameplay.Vfx
         private float _spin;
         private Vector3 _velocity;
         private float _gravity;
+        private float _drag;
+        private float _flutter;
+        private float _flutterPhase;
         private Color _color;
         private Transform _follow;
         private Vector3 _followOffset;
@@ -35,6 +38,9 @@ namespace GodTower.Gameplay.Vfx
             _spin = request.Spin;
             _velocity = request.Velocity;
             _gravity = request.Gravity;
+            _drag = request.Drag;
+            _flutter = request.Flutter;
+            _flutterPhase = Random.Range(0f, Mathf.PI * 2f);
             _follow = request.Follow;
             _followOffset = request.Follow != null ? request.Position - request.Follow.position : Vector3.zero;
 
@@ -55,9 +61,22 @@ namespace GodTower.Gameplay.Vfx
 
             // Overshoot pop in the first 20%, then settle.
             float pop = t < 0.2f ? Mathf.Lerp(0.3f, 1.15f, t / 0.2f) : Mathf.Lerp(1.15f, 1f, (t - 0.2f) / 0.8f);
-            transform.localScale = Vector3.one * (_targetScale * pop);
+            var scale = Vector3.one * (_targetScale * pop);
 
-            _velocity.y -= _gravity * Time.deltaTime;
+            float dt = Time.deltaTime;
+            _velocity.y -= _gravity * dt;
+            if (_drag > 0f)
+                _velocity *= Mathf.Exp(-_drag * dt);
+
+            if (_flutter > 0f)
+            {
+                // Paper flip: squash the width through zero, and sway sideways in step with it.
+                float phase = _flutterPhase + _age * _flutter;
+                scale.x *= Mathf.Cos(phase);
+                transform.position += Vector3.right * (Mathf.Sin(phase * 0.5f) * 1.2f * dt);
+            }
+            transform.localScale = scale;
+
             if (_follow != null)
             {
                 _followOffset += _velocity * Time.deltaTime;
