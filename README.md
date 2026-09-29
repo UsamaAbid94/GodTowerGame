@@ -7,9 +7,9 @@ Android build target.
 
 | Deliverable | Link |
 |---|---|
-| Android APK | _add link_ |
-| Gameplay video | _add link_ |
-| Source (this repository) | _add link_ |
+| Android APK | https://www.transfernow.net/dl/20260929hhjXu6gv|
+| Gameplay video |https://youtube.com/shorts/zNdy_3eXKxU?feature=share |
+| Source (this repository) | https://github.com/UsamaAbid94/GodTowerGame |
 
 ---
 
