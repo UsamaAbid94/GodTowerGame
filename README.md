@@ -13,6 +13,27 @@ Android build target.
 
 ---
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="Assets/Screenshots/mainmenu.png" width="250" alt="Main menu"><br><b>Main menu</b></td>
+    <td align="center"><img src="Assets/Screenshots/levelselection.png" width="250" alt="Level selection"><br><b>Level selection</b></td>
+    <td align="center"><img src="Assets/Screenshots/gameplay.png" width="250" alt="Gameplay"><br><b>Gameplay</b></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="Assets/Screenshots/gameplay2.png" width="250" alt="Gameplay: hazards"><br><b>Gameplay</b></td>
+    <td align="center"><img src="Assets/Screenshots/gameplay3.png" width="250" alt="Gameplay: monsters"><br><b>Gameplay</b></td>
+    <td></td>
+  </tr>
+</table>
+
+### Gameplay video
+
+[▶ Watch the gameplay video](Assets/Screenshots/gameplay-video.mp4) (or on [YouTube](https://youtube.com/shorts/zNdy_3eXKxU?feature=share))
+
+---
+
 ## 1. Engine & packages
 
 | | Version |
